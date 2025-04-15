@@ -1,0 +1,10 @@
+description = "Ubuntu 24.04 Noble Numbat base image with no buildpacks included. To use, specify buildpacks at build time."
+
+[lifecycle]
+  version = "0.20.7"
+
+[stack]
+  build-image = "docker.io/paketobuildpacks/ubuntu-noble-build-base:0.0.2"
+  id = "io.buildpacks.stacks.noble"
+  run-image = "index.docker.io/paketobuildpacks/ubuntu-noble-run-base:latest"
+  run-image-mirrors = []
